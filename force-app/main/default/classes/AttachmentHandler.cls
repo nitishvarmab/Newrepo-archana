@@ -2,6 +2,9 @@ public with sharing class AttachmentHandler {
     @AuraEnabled
     public static void createAttachmentForCase(String caseId) {
         try {
+
+
+            
             // Fetch the related Scanner Report Case record
             Scanner_Report_Case__c caseRecord = [
                 SELECT Id, File_Id__c, File_Name__c 
